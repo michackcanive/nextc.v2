@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-ao" class="dragdrop geolocation svg dragdrop geolocation svg">
+
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!--<meta http-equiv="refresh" content="120" url="/inicio">-->
+  <title><?=$this->presentacao['empresa'] ?? ''?> <?=$this->presentacao['marca'] ?? ''?> </title>
+  <meta content="" name="description">
+  <meta content="" name="<?=$this->presentacao['empresa'] ?? ''?> <?=$this->presentacao['marca'] ?? ''?>">
+<!-- CSS only -->
+  <!-- Favicons -->
+  <link href="<?=$this->urlcaminho?>assets1/img/<?=$this->presentacao['logotipo'] ?? ''?>" rel="icon">
+  <link href="<?=$this->urlcaminho?>assets1/img/<?=$this->presentacao['logotipo'] ?? ''?>" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="<?=$this->urlcaminho?>assets1/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?=$this->urlcaminho?>assets1/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="<?=$this->urlcaminho?>assets1/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+<link href="<?=$this->urlcaminho?>assets1/css/sticky-footer-navbar.css" rel="stylesheet">
+  <link href="<?=$this->urlcaminho?>assets1/css/style.css" rel="stylesheet">
+  <link href="<?=$this->urlcaminho?>assets1/css/stylev.css" rel="stylesheet">
+   <!--<link href="<?=$this->urlcaminho?>assets/css/bootstrap-theme.css" rel="stylesheet">-->
+<link href="<?=$this->urlcaminho?>assets1/css/style2.css" rel="stylesheet">
+<link href="<?=$this->urlcaminho?>assets1/css/cheatsheet.css" rel="stylesheet">
+<link href="<?=$this->urlcaminho?>assets1/css/form-validation.css" rel="stylesheet">
+
+<link href="<?=$this->urlcaminho?>assets1/css/sidebars.css" rel="stylesheet">
+<link href="<?=$this->urlcaminho?>assets1/css/signin.css" rel="stylesheet">
+<link href="<?=$this->urlcaminho?>assets1/css/heroes.css" rel="stylesheet">
+<link href="<?=$this->urlcaminho?>assets/css/dashboard.css" rel="stylesheet">
+<link href="<?=$this->urlcaminho?>assets1/css/demo.css" rel="stylesheet">
+
+<script src="<?=$this->urlcaminho?>assets1/js/Chart.js"></script>
+<script src="<?=$this->urlcaminho?>assets1/js/legend.js"></script>
+<script src="<?=$this->urlcaminho?>assets1/js/demo.js"></script>
+
+
+
+
+
+</head>
+<body class="background2o" style="background-color: #15203670;">
+<style>
+.paginator {
+  display: block;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.paginator_item {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 4px 12px;
+  background: #A287E7;
+  color: #fff;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.paginator_item:hover {
+  background: #8A6ED5;
+}
+
+.paginator_active,
+.paginator_active:hover {
+  background: #cccccc;
+}
+
+
+  body {
+    text-decoration: none!important;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:  rgba(16, 16, 17, 0.956);
+    z-index: 1060;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    transform: 1.5s;
+    
+    text-emphasis: none;
+}
+.modal-backdrop.show {
+  display: none !important;
+ 
+}
+.form-group:focus {
+       outline: none !important;
+      border-color: #719ECE !important;
+      box-shadow: 0 0 10px #719ece !important;
+    }
+    .form-group:focus-visible {
+      outline-offset: 0px !important;
+    }
+</style> 
+
+		<?= $this->content() ?>
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+   <script src="<?=$this->urlcaminho?>assets1/vendor/typed.js/typed.min.js"></script>
+  <script src="<?=$this->urlcaminho?>assets1/vendor/jquery/jquery.min.js"></script>
+  <script src="<?=$this->urlcaminho?>assets1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?=$this->urlcaminho?>assets1/js/validate.js"></script>
+  <script src="<?=$this->urlcaminho?>assets1/vendor/venobox/venobox.min.js"></script>
+  <script src="<?=$this->urlcaminho?>assets1/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="<?=$this->urlcaminho?>assets1/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+
+  <!-- Vendor JS Files -->
+
+
+ 
+
+  <script src="<?=$this->urlcaminho?>assets1/js/ajax.js"></script>
+   
+    <script src="<?=$this->urlcaminho?>assets1/js/form-validation.js"></script>
+
+  <script src="<?=$this->urlcaminho?>assets1/js/sidebars.js"></script>
+  <!-- Template Main JS File -->
+  <script src="<?=$this->urlcaminho?>assets1/js/main.js"></script>
+  <script src="<?=$this->urlcaminho?>assets1/js/main1.js"></script>
+   <script src="<?=$this->urlcaminho?>assets1/js/sparkline/jquery.charts-sparkline.js"></script>
+   <script src="<?=$this->urlcaminho?>assets1/js/sparkline/jquery.sparkline.min.js"></script>
+   <script src="<?=$this->urlcaminho?>assets1/js/sparkline/sparkline-active.js"></script>
+
+ 
+  <!-- Template Main JS File -->
+	</body>
+
+</html>

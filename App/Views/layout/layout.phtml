@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-ao" class="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title><?=$this->presentacao['empresa'] ?? ''?> <?=$this->presentacao['marca'] ?? ''?> </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="" name="description">
+    <meta content="" name="<?=$this->presentacao['empresa'] ?? ''?> <?=$this->presentacao['marca'] ?? ''?>">
+    <meta content="" name="<?=$this->presentacao['empresa'] ?? ''?> <?=$this->presentacao['marca'] ?? ''?>">
+  <!-- Favicons -->
+  <link href="<?=$this->urlcaminho?>assets1/img/<?=$this->presentacao['logotipo'] ?? ''?>" rel="icon">
+  <link href="<?=$this->urlcaminho?>assets1/img/<?=$this->presentacao['logotipo'] ?? ''?>" rel="apple-touch-icon">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="Produto">
+  <meta name="twitter:site" content="@ajec">
+  <meta name="twitter:title" content="-<?=$this->presentacao['empresa'] ?? ''?> <?=$this->presentacao['marca'] ?? ''?>">
+  <meta name="twitter:description" content="Sistema de envio de sms em massa em angola,<?=$this->presentacao['empresa'] ?? ''?>,rapido , simples, barrato ">
+  <meta name="twitter:creator" content="@ajec">
+
+  <link href="<?=$this->urlcaminho?>assets1/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="<?=$this->urlcaminho?>assets/css/sweetalert2.min.css">
+
+  <!-- Favicon -->
+  <link href="<?=$this->urlcaminho?>assets1/img/<?=$this->presentacao['logotipo'] ?? ''?>" rel="icon">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+ 
+  <!-- Icons -->
+  <link rel="stylesheet" href="<?=$this->urlcaminho?>/assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="<?=$this->urlcaminho?>/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="<?=$this->urlcaminho?>/assets/css/argon.min23cd.css" type="text/css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="<?=$this->urlcaminho?>/assets/css/card_style.css" type="text/css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+
+ 
+  <?php
+  $padraocolor = $this->pegar_cor['cor']??'';
+  $bgprimary= $padraocolor ;
+  $bgsecundary="";
+  $bgdefault="";
+  $textcolor= $padraocolor;
+  $btncolor= $padraocolor;
+  ?>
+
+<style>
+.bg-primary {
+    background-color: <?=$bgprimary?>!important;
+}
+.bg-secundary {
+    background-color:<?=$bgsecundary?>!important;
+}
+.bg-default {
+    background-color:<?=$bgdefault?>!important;
+}
+.btn-primary {
+  background-color: <?=$btncolor?> !important;
+}
+.text-primary {
+  color: <?=$textcolor?> !important;
+}
+.text-default {
+  color: <?=$textcolor?> !important;
+}
+/*cor da barra de rolagem*/
+.swal2-popup .swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: <?=$bgprimary?> !important;
+    color: #fff;
+    font-size: 1.0625em;
+}
+::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+::-webkit-scrollbar-thumb {
+  background-color:<?=$bgprimary?>!important;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border:2px solid white;
+}
+
+.mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+}
+.btn {
+  border: 0px solid transparent !important;        /* color of the tracking area */
+}
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .vh-100 {
+            height:auto !important;
+            padding-top: 100px !important;
+            padding-bottom: 100px !important;
+        }
+    }
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        .vh-100 {
+            height:auto !important;
+            padding-top: 70px !important;
+            padding-bottom: 70px !important;
+        }
+    }
+.card {
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -moz-animation-name: card;
+  -webkit-animation-name: card;
+  animation-name: card; 
+}
+
+@-moz-keyframes card {
+  from {
+    margin-top:100%;
+  }
+
+  to {
+    margin-top:0%;
+  }
+}
+
+@-webkit-keyframes card {
+  from {
+    margin-top:100%;
+  }
+
+  to {
+    margin-top:0%;
+ }
+}
+
+@keyframes card {
+  from {
+    margin-top:100%;
+  }
+
+  to {
+   margin-top:0%;
+ }
+} 
+.form-group:focus {
+  outline: none !important;
+  border-color: #719ECE !important;
+  box-shadow: 0 0 10px #719ece !important;
+}
+.form-group:focus-visible {
+  outline-offset: 0px !important;
+}
+</style>
+<script>
+     var i = setInterval(function () {
+    clearInterval(i);
+    // O código desejado é apenas isto:
+    document.getElementById("preloader-active").style.display = "none";
+    document.getElementById("corpo").style.display = "block";
+
+}, 2000);
+</script>
+
+</head>
+
+<body>
+ 
+<?= $this->content() ?>
+
+
+  <!-- SMS Scripts -->
+  <!-- Core -->
+  <script src="<?=$this->urlcaminho?>assets1/vendor/jquery/jquery.min.js"></script>
+  <script src="<?=$this->urlcaminho?>/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  <script src="<?=$this->urlcaminho?>/assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="<?=$this->urlcaminho?>assets/js/sweetalert2.min.js"></script>
+  <script src="<?=$this->urlcaminho?>assets1/js/validate.js"></script>
+  <script src="<?=$this->urlcaminho?>assets1/js/form-validation.js"></script>
+  <script src="<?=$this->urlcaminho?>assets1/js/ajax.js"></script>
+   <script src="<?=$this->urlcaminho?>assets1/js/form-validation.js"></script>
+  <!-- Optional JS -->
+  <script src="<?=$this->urlcaminho?>/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="<?=$this->urlcaminho?>/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+  <!-- SMS JS -->
+  <script src="<?=$this->urlcaminho?>/assets/js/argon.min23cd.js?v=1.2.1"></script>
+  
+  <!-- Demo JS - remove this in your project -->
+  <script src="<?=$this->urlcaminho?>/assets/js/demo.min.js"></script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&amp;ev=PageView&amp;noscript=1" />
+  </noscript>
+
+  <!-- mostrar menu activo -->
+    <script>
+        let id = "<?=$bgprimary?>";
+        if(id == "primary"){document.getElementById(id).checked= "true";}
+        if(id == ""){document.getElementById("primary").checked= "true";}
+        const doc = document.getElementById(id).checked= "true";
+
+        function menuActive(id){
+        localStorage.setItem("idMenu",id);
+        }
+        let idMenu = localStorage.getItem("idMenu");
+        document.getElementById(idMenu).classList.add("active");
+    </script>
+</body>
+
+</html>
