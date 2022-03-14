@@ -1,0 +1,8 @@
+#gitignore
+
+#Naõ
+/node_modules
+
+#Não
+/.vscode
+.DS_Store
